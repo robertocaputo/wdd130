@@ -1,16 +1,12 @@
 /* ----------SETUP---------- */
-:root {
-  --primary-color: #4128e6;
-  --secondary-color: #ffffff;
-  --highlight-color-1: #000000;
-  --highlight-color-2: yellow;
-  --highlight-color-3: red;
-}
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
 
 body {
@@ -20,29 +16,34 @@ body {
 
 /* ---------NAV---------- */
 nav {
+  background-color: steelblue;
+  padding: 1rem;
   display: flex;
-  justify-content: right;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
-  color: var(--secondary-color);
-  padding: 10px;
-  display: inline-block;
+  display: block;
+  padding: 0.5rem;
   text-decoration: none;
-  line-height: 2;
-
-}
-
-nav a:first-child {
-  margin-right: auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
 }
 
 h1 {
-  color: var(--primary-color);
-  padding: .5rem;
+  color: steelblue;
+  padding: 0.5rem;
+  border-bottom: 1px solid steelblue;
+  display: flex;
+  justify-content: center;
+
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
 
 /* ----------MAIN---------- */
@@ -50,24 +51,21 @@ main {
   max-width: 640px;
   margin: 10px auto;
   padding: 20px;
-}
-
-article {
-border-radius: 15px;
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 main article img {
   width: 150px;
   height: auto;
-  border-radius: 15px;
   float: right;
   margin: 0 0 1rem 1rem;
-  padding: 2px;
+  padding: 20px 0 0 0;
 }
 
 p { 
   padding: 0;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 /* ----------UL---------- */
@@ -78,22 +76,24 @@ ul {
 /* ----------ASIDE---------- */
 aside {
   position: relative;
-  padding: 20px;
-  color: var(--highlight-color-1);
+  color: black;
   text-align: center;
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
   width: 200px;
   height: auto;
-  border-radius: 15px;
 }
 
 aside h2 {
   position: absolute;
   top: 20px;
-  left: 44%;
-  color: var(--highlight-color-1);
+  left: 40%;
+  color: black;
   padding: 5px;
 }
 
@@ -110,9 +110,8 @@ footer {
   margin: 10px auto;
   border: 1px solid #ccc;
   padding: 1rem;
-  background-color: var(--secondary-color);
-  color: var(--highlight-color-1);
-  border-radius: 15px;
+  background-color: white;
+  color: black;
 }
 
 .indent {
