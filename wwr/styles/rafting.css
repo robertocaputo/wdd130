@@ -186,3 +186,42 @@ footer p {
   width: 38px;
   height: auto;
 }
+
+.contact-form {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1); 
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-weight: normal;
+}
+
+.question {
+  text-align: center;
+  padding: 10px;
+}
+
+.employee-profiles {
+  text-align: center;
+}
+
+.employee {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  background: #396e94;
+}
+
+.employee img {
+  width: 240px;
+}
+
+iframe {
+  width: 100%;
+  height: 240px;
+}
